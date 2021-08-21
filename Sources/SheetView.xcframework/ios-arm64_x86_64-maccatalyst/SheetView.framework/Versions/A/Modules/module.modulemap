@@ -1,0 +1,11 @@
+framework module SheetView {
+  umbrella header "SheetView.h"
+
+  export *
+  module * { export * }
+}
+
+module SheetView.Swift {
+    header "SheetView-Swift.h"
+    requires objc
+}

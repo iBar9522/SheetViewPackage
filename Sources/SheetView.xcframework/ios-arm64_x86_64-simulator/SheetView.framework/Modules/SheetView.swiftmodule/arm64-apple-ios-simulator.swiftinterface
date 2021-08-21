@@ -1,0 +1,19 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios14.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SheetView
+@_exported import SheetView
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MainContainerViewController : SheetView.BottomSheetContainerViewController<UIKit.UIViewController, UIKit.UIViewController> {
+  @objc override final public func viewDidLoad()
+  override public init(contentViewController: UIKit.UIViewController, bottomSheetViewController: UIKit.UIViewController, configuration: SheetView.BottomSheetContainerViewController<UIKit.UIViewController, UIKit.UIViewController>.BottomSheetConfiguration)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BottomSheetContainerViewController<Content, BottomSheet> : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate where Content : UIKit.UIViewController, BottomSheet : UIKit.UIViewController {
+  public struct BottomSheetConfiguration {
+  }
+  public init(contentViewController: Content, bottomSheetViewController: BottomSheet, configuration: SheetView.BottomSheetContainerViewController<Content, BottomSheet>.BottomSheetConfiguration)
+  @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
